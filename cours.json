@@ -1,0 +1,30 @@
+{
+    "semester 1": [
+        {
+            "name": "ANALYSE POUR L'INGÉNIEUR ET TRANSFORMÉES INTÉGRALES",
+            "url": "https://drive.google.com/file/d/1IB1lrWtxt51Ve31DeLts5fsTGpm_eR_Q/view?usp=drive_link"
+        },
+        {
+            "name": "PRINCIPES FONDAMENTAUX DES RÉSEAUX",
+            "url": "https://drive.google.com/file/d/17lYbeY3So7pJKY-rSAUsz8UGyx2RZSH-/view?usp=drive_link"
+        },
+        {
+            "name": "PROGRAMMATION ORIENTÉE OBJET",
+            "url": "https://drive.google.com/file/d/1jP4ODTs0IpPMP8W3KXZyfQVu7XAMmvJt/view?usp=drive_link"
+        },
+        {
+            "name": "SYSTÈME D'INFORMATION ET BASES DE DONNÉES",
+            "url": "https://drive.google.com/file/d/1oaKL_QlDYkXVe_GDcahUDLRLNoQMh5gR/view?usp=drive_link"
+        },
+        {
+            "name": "THÉORIE ET PROGRAMMATION SYSTÈME",
+            "url": "https://drive.google.com/file/d/1stm2qFPLJj53rcKT2bQuNJSDOGTtj9wo/view?usp=drive_link"
+        }
+    ],
+    "semester 2": [
+        {
+            "name": "coming soon",
+            "url": "#"
+        }
+    ]
+}

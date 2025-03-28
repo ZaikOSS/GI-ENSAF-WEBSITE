@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSAF Génie Informatique - Cours</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon links -->
+    <link rel="icon" href="GI.jpeg" type="image/jpeg">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- Firebase SDK v9 (modular version) -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
+        import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-database.js";
+        
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyC-OWfDcnwAbK_cQG9C1HPlfVPohZOpg7o",
+            authDomain: "feedback-95531.firebaseapp.com",
+            databaseURL: "https://feedback-95531-default-rtdb.firebaseio.com",
+            projectId: "feedback-95531",
+            storageBucket: "feedback-95531.firebasestorage.app",
+            messagingSenderId: "46985996956",
+            appId: "1:46985996956:web:51e0f5ee5ea193a7815b59",
+            measurementId: "G-VMDW2SWW3Q"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        
+        // Make available to your script.js
+        window.firebaseDB = {
+            db: database,
+            ref: ref,
+            push: push
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="GI.jpeg" alt="Logo Génie Informatique ENSAF" class="logo-img">
+                <span class="logo-text">ENSAF GI</span>
+            </div>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#courses">Cours</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-logo-container">
+                    <a href="https://www.linkedin.com/in/zakaria-ouadifi/" target="_blank" rel="noopener noreferrer">
+                        <img src="GI.jpeg" alt="Logo Génie Informatique ENSAF" class="hero-logo">
+                    </a>
+                </div>
+                <h1>Plateforme des Cours de Génie Informatique</h1>
+                <p>La filière Génie Informatique à l'ENSAF forme des ingénieurs polyvalents en conception, 
+                    développement et gestion des systèmes informatiques. Cette plateforme regroupe l'ensemble 
+                    des ressources pédagogiques du programme.</p>
+            </div>
+        </section>
+
+        <section id="courses" class="courses-section">
+            <h2>Cours par Semestre</h2>
+            
+            <div class="filter-container">
+                <select id="semester-filter">
+                    <option value="all">Tous les semestres</option>
+                    <!-- Options will be added dynamically -->
+                </select>
+            </div>
+
+            <div class="courses-grid" id="courses-container">
+                <!-- Content will be loaded dynamically -->
+                <div class="loading-message">Chargement des cours...</div>
+            </div>
+        </section>
+
+        <section id="feedback" class="feedback-section">
+            <h2>Feedback</h2>
+            <form id="feedback-form">
+                <div class="form-group">
+                    <label for="name">Nom complet:</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Vos suggestions pour améliorer la plateforme..." required></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+                <div id="feedback-message" class="feedback-message"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ENSAF Génie Informatique - Par Zaikos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
