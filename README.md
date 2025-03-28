@@ -8,6 +8,9 @@ Ce projet est un site web dédié à la filière **Génie Informatique** de l'**
 - 🔥 **Design responsive** : Compatible avec tous les appareils.
 - 🔗 **Intégration Firebase** : Stockage des feedbacks en temps réel.
 
+## 🖼️ Screenshot
+![image](https://github.com/user-attachments/assets/938bd939-2c03-40fd-91e1-69e6b0a7dbe2)
+
 ## 🛠️ Technologies utilisées
 - **HTML, CSS, JavaScript**
 - **Firebase Realtime Database** (pour stocker les feedbacks)
